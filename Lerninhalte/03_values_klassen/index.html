@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>03 values & klassen</title>
+  </head>
+  <body>
+    <header>
+      <div onclick="darkLight()" class="dark_click"></div>
+    </header>
+    <main>
+      <form onsubmit="getImputValue(event)">
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+        <br />
+        <label for="age">Age</label>
+        <input type="number" id="age" />
+        <br />
+        <label for="range">Range</label>
+        <input type="range" id="range" min="0" max="100" />
+        <br />
+        <label for="check">Happy?</label>
+        <input type="checkbox" id="check" />
+        <br />
+        <label for="bday">Bday</label>
+        <input type="date" id="bday" />
+        <br />
+        <input type="submit" />
+        <h2></h2>
+      </form>
+    </main>
+    <footer>
+      <h3 onclick="addClass()">add a class</h3>
+      <h4 onclick="removeClass()" class="super_crazy">remove a class</h4>
+    </footer>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
