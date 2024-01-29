@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Classlist-Level-2_1</title>
+  </head>
+  <body>
+    <form>
+      <h1 id="meine_h1">Meine Bucket-List</h1>
+      <ul id="meine_liste">
+        <li>Mit dem Fahrrad nach Rom fahren</li>
+        <li>Einen Käfigkampf machen</li>
+        <li>Vipassana machen</li>
+      </ul>
+      <input
+        type="submit"
+        id="stylen"
+        value="Headline stylen"
+        onclick="changeHeadline(event)"
+      />
+      <input
+        type="submit"
+        id="zurücksetzen"
+        value="Headline zurücksetzen"
+        onclick="resetHeadline(event)"
+      />
+    </form>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
