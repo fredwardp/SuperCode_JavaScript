@@ -11,6 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.5s ease;
 }
 
 :root {
@@ -48,4 +49,23 @@ a {
 
 li {
   list-style: none;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 46vh;
+  min-height: 100svh;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 76ch;
+}
+
+input {
+  width: 85%;
 }
