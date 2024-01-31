@@ -1,10 +1,12 @@
 function airQuality() {
+  // Deklaration der Variablen und Verknüpfung mit dem HTML
   const range = document.querySelector(".range").value;
   const background = document.querySelector("body");
   const label = document.querySelector("label");
   const firstH2 = document.querySelector(".concern");
   const secondH2 = document.querySelector(".effect");
 
+  // Wenn die Range verändert wird, soll sich die Hintergrundfarbe des bodys ändern und die entsrprechenden Beschreibungstexte des Luftverschmutzungsgrades angezeigt werden
   if (range < 55) {
     label.innerHTML = "Luftqualität: " + range;
     firstH2.innerHTML = "Level of health concern: good";
