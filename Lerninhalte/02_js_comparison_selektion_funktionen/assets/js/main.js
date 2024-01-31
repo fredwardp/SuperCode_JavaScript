@@ -37,7 +37,7 @@ console.log("B" > "a"); //false
 
 //! ==== Elemente selektieren ====
 
-//-   getElementById[()
+//-   getElementById()
 // Damit sprechen wir die Elemente über die id an
 //id aus dem HTML: main-headline
 
