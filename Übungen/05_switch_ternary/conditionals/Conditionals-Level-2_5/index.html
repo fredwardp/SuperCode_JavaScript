@@ -4,9 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Document</title>
+    <title>Conditionals-Level-2_5</title>
+
+    <style>
+      .style {
+        margin: auto;
+        width: 220px;
+        padding: 20px;
+        background-color: #999;
+        font-family: Geneva, Tahoma, sans-serif;
+        border-radius: 5px;
+      }
+
+      button {
+        background: #333;
+        color: white;
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      input {
+        border-radius: 5px;
+        padding: 5px;
+        margin-bottom: 5px;
+      }
+    </style>
   </head>
   <body>
+    <div class="style">
+      <form action="/action_page.php" method="get">
+        <select id="bundeslandInfoErgebnis">
+          <option value="Baden-Württemberg">Baden-Württemberg</option>
+          <option value="Bayern">Bayern</option>
+          <option value="Berlin">Berlin</option>
+          <option value="Brandenburg">Brandenburg</option>
+          <option value="Bremen">Bremen</option>
+          <option value="Hamburg">Hamburg</option>
+          <option value="Hessen">Hessen</option>
+          <option value="Mecklenburg-Vorpommern">Mecklenburg-Vorpommern</option>
+          <option value="Niedersachsen">Niedersachsen</option>
+          <option value="Nordrhein-Westfalen">Nordrhein-Westfalen</option>
+          <option value="Rheinland-Pfalz">Rheinland-Pfalz</option>
+          <option value="Saarland">Saarland</option>
+          <option value="Sachsen">Sachsen</option>
+          <option value="Sachsen-Anhalt">Sachsen-Anhalt</option>
+          <option value="Schleswig-Holstein">Schleswig-Holstein</option>
+          <option value="Thüringen">Thüringen</option>
+        </select>
+
+        <input type="button" value="Check" onclick="check()" />
+      </form>
+      <div id="informationen"></div>
+    </div>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
