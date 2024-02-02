@@ -4,9 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <title>Document</title>
+    <title>Project Zeichenkettentrennung</title>
   </head>
   <body>
+    <header>
+      <article>
+        <h1>Zeichen ketten trennungs maschine</h1>
+        <form>
+          <label for="">Zu trennende Zeichenkette</label>
+          <input type="text" id="zeichenkette" />
+          <label for="">Trennen bei Zeichenkette</label>
+          <input type="text" id="trennen_bei" />
+          <div>
+            <input type="radio" name="radio" id="davor_trennen" value="1" />
+            <label for="davor_trennen">davor trennen</label>
+            <input type="radio" name="radio" id="danach_trennen" value="2" />
+            <label for="danach_trennen">danach trennen</label>
+            <input type="button" value="Hier clicken" onclick="hierTrennen()" />
+          </div>
+        </form>
+        <h2>Ausgabe</h2>
+        <h3>Vorderer Teil</h3>
+        <p class="vorderer_teil"></p>
+        <h3>Hinterer Teil</h3>
+        <p class="hinterer_teil"></p>
+      </article>
+    </header>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>
