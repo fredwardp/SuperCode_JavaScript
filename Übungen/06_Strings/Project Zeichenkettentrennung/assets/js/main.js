@@ -10,13 +10,14 @@ function hierTrennen() {
 
   const trennWert = zeichenkette.indexOf(trennenBei);
 
-  const trennWertUndEins = trennWert + 1;
+  const trennWertLänge = trennWert + trennenBei.length;
+  console.log(trennWertLänge);
 
-  if (davor == "1") {
+  if (davor == "davor") {
     vordererTeil.textContent = zeichenkette.slice(0, trennWert);
-    hintererTeil.textContent = zeichenkette.slice(trennWert, -1);
+    hintererTeil.textContent = zeichenkette.slice(trennWert);
   } else {
-    vordererTeil.textContent = zeichenkette.slice(0, trennWertUndEins);
-    hintererTeil.textContent = zeichenkette.slice(trennWertUndEins, -1);
+    vordererTeil.textContent = zeichenkette.slice(0, trennWertLänge);
+    hintererTeil.textContent = zeichenkette.slice(trennWertLänge);
   }
 }
