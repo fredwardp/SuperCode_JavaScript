@@ -11,7 +11,11 @@ let getraenke = [
 
 getraenke.sort();
 
-const myDrinks = getraenke.forEach((drink) => {
-  console.log(drink);
-  return document.write(drink);
-});
+const myDrinks = (list) => {
+  list.forEach((drink) => {
+    // console.log(drink);
+    return document.write(drink + "<br>");
+  });
+};
+
+myDrinks(getraenke);
