@@ -1,5 +1,4 @@
 const buttonList = document.querySelectorAll("button");
-const buttonClick = document.querySelector("button");
 
 buttonList[0].addEventListener("click", () => {
   document.querySelector("output").innerHTML =
