@@ -1,4 +1,5 @@
 let date1 = new Date();
+console.log(date1);
 let date2 = new Date("September 2, 2019 09:00:00");
 let date3 = new Date(0);
 let date4 = new Date(31556908800);

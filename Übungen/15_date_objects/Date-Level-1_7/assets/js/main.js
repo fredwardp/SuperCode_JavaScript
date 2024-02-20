@@ -1,7 +1,6 @@
 const workOrNot = (datum) => {
   let date = new Date(datum);
   date.getDay();
-  console.log(date.getDay());
   if (date.getDay() === 0 || date.getDay() === 6) {
     console.log("Weekend");
   } else {
