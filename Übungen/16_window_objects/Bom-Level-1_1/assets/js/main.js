@@ -10,7 +10,7 @@ const timer = () => {
   let counter = setInterval(() => {
     console.log(startPoint);
     startPoint--;
-    if ((startPoint = 0)) {
+    if (startPoint == 0) {
       console.log("Endlich Feierabend");
       clearInterval(counter);
     }
